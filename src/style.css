@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "highlight.js/styles/atom-one-dark.min.css";
+
+@theme {
+  --color-accent: #f36f21;
+  --color-accent-dark: #d65a12;
+  --color-ink: #1a1d23;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* code blocks */
+pre.hljs {
+  background: #282c34;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* mermaid diagrams */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
